@@ -78,7 +78,7 @@ target/
 # exclude data from source control by default
 /data/
 /models/
-
+/reports/
 .dvc/cache
 
 # Mac OS-specific storage files

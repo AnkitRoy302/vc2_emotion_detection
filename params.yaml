@@ -1,0 +1,10 @@
+Data_Ingestion:
+  test_size: 0.3
+
+build_features:
+  max_features: 150
+
+train_model:
+  n_estimators: 80
+  max_depth: 10
+  
