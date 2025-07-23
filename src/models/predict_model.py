@@ -64,7 +64,7 @@ def main() -> None:
     """Main function to orchestrate model prediction and evaluation."""
     try:
         model = load_model("models/random_forest_model.pkl")
-        test_data = load_test_data("data/interim/test_bow.csv")
+        test_data = load_test_data("data/interim/test_tfidf.csv")
         X_test = test_data.drop(columns=['label']).values
         y_test = test_data['label'].values
         metrics = evaluate_model(model, X_test, y_test)

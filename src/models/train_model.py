@@ -66,7 +66,7 @@ def main() -> None:
         n_estimators = params['train_model']['n_estimators']
         max_depth = params['train_model']['max_depth']
 
-        x_train, y_train = load_train_data("data/interim/train_bow.csv")
+        x_train, y_train = load_train_data("data/interim/train_tfidf.csv")
         model = train_model(x_train, y_train, n_estimators, max_depth)
         save_model(model, "models/random_forest_model.pkl")
         logging.info("Model training pipeline completed successfully.")
